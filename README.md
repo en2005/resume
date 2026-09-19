@@ -1,3 +1,9 @@
+## Resume
+
+[View the PDF](nguyen_ethan_resume.pdf)
+
+![Ethan Nguyen resume](preview/resume.png)
+
 ### Build using Docker
 
 ```sh
