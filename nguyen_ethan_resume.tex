@@ -1,5 +1,5 @@
 %-------------------------
-% Resume in LateX
+% Resume in LaTeX
 % Author : Sourabh Bajaj
 % License : MIT
 %------------------------
@@ -23,11 +23,11 @@
 \renewcommand{\footrulewidth}{0pt}
 
 % Adjust margins
-\addtolength{\oddsidemargin}{-0.5in}
-\addtolength{\evensidemargin}{-0.5in}
-\addtolength{\textwidth}{1in}
-\addtolength{\topmargin}{-.5in}
-\addtolength{\textheight}{1.0in}
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.6in}
+\addtolength{\textwidth}{1.2in}
+\addtolength{\topmargin}{-.6in}
+\addtolength{\textheight}{1.2in}
 
 \urlstyle{same}
 
@@ -64,13 +64,14 @@
     \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
       \textbf{#1} & #2 \\
       \textit{\small #3} & \textit{\small #4} \\
-    \end{tabular*}\vspace{-5pt}
+    \end{tabular*}\vspace{-6pt}
 }
 
 \newcommand{\resumeSubSubheading}[2]{
+    \vspace{5pt}
     \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
       \textit{\small #1} & \textit{\small #2} \\
-    \end{tabular*}\vspace{-5pt}
+    \end{tabular*}\vspace{-6pt}
 }
 
 \newcommand{\resumeItemPlain}[1]{
@@ -95,10 +96,12 @@
 \begin{document}
 
 %----------HEADING-----------------
-\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
-  \textbf{\href{https://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email: \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
-  \href{https://sourabhbajaj.com/}{sourabhbajaj.com} & Mobile: \href{tel:+11234567890}{+1-123-456-7890} \\
-\end{tabular*}
+\begin{center}
+  {\textbf{\Large Ethan Nguyen}}\\[2pt]
+  E: \href{mailto:ethanpnguyen@outlook.com}{ethanpnguyen@outlook.com} $\cdot$
+  P: \href{tel:+17817209352}{(781) 720-9352} $\cdot$
+  L: \href{https://linkedin.com/ethanpnguyen}{ethanpnguyen}
+\end{center}
 
 
 %-----------EDUCATION-----------------
@@ -106,10 +109,10 @@
   \resumeSubHeadingListStart
     \resumeSubheading
       {Georgia Institute of Technology}{Atlanta, GA}
-      {Master of Science in Computer Science; GPA: 4.00}{Aug 2012 -- Dec 2013}
+      {Master of Science in Computer Science, Concentration in Computing Systems}{May 2026}
     \resumeSubheading
-      {Birla Institute of Technology and Science}{Pilani, India}
-      {Bachelor of Engineering in Electrical and Electronics; GPA: 3.66 (9.15/10.0)}{Aug 2008 -- July 2012}
+      {The University of Texas at Austin}{Austin, TX}
+      {Bachelor of Science in Mechanical Engineering, Minors in CS and Business}{May 2023}
   \resumeSubHeadingListEnd
 
 
@@ -118,95 +121,72 @@
   \resumeSubHeadingListStart
 
     \resumeSubheading
-      {Google}{Mountain View, CA}
-      {Software Engineer}{Oct 2016 -- Present}
+      {AT\&T}{Dallas, TX}
+      {Lead Data/AI Engineer, Finance}{Jul 2026 -- Present}
       \resumeItemListStart
-        \resumeItem{TensorFlow}
-          {TensorFlow is an open source software library for numerical computation using data flow graphs; primarily used for training deep learning models. Worked on APIs and performance for training models on Tensor Processing Units (TPU).}
-        \resumeItem{Apache Beam}
-          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines, as well as a set of language-specific SDKs for constructing pipelines and runners.}
-      \resumeItemListEnd
-      
-% --------Multiple Positions Heading------------
-  %  \resumeSubSubheading
-  %   {Software Engineer I}{Oct 2014 -- Sep 2016}
-  %   \resumeItemListStart
-  %      \resumeItem{Apache Beam}
-  %        {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
-  %   \resumeItemListEnd
-
-%-------------------------------------------
-
-    \resumeSubheading
-      {Coursera}{Mountain View, CA}
-      {Senior Software Engineer}{Jan 2014 -- Oct 2016}
-      \resumeItemListStart
-        \resumeItem{Notifications}
-          {Service for sending email, push and in-app notifications. Involved in features such as delivery time optimization, tracking, queuing and A/B testing. Built an internal app to run batch campaigns for marketing, etc.}
-        \resumeItem{Nostos}
-          {Bulk data processing and injection service from Hadoop to Cassandra and provides a thin REST layer on top for serving offline computed data online.}
-        \resumeItem{Workflows}
-          {Dataduct an open source workflow framework to create and manage data pipelines leveraging reusable patterns to expedite developer productivity.}
-        \resumeItem{Data Collection}
-          {Designed the internal survey and crowdsourcing platform which allowed for creating various tasks for crowdsourcing or embedding surveys across the Coursera platform.}
-        \resumeItem{Dev Environment}
-          {Analytics environment based on Docker and AWS, standardized the Python and R dependencies. Wrote the core libraries that are shared by all data scientists.}
-        \resumeItem{Data Warehousing}
-          {Setup, schema design and management of Amazon Redshift. Built an internal app for access to the data using a web interface. Dataduct integration for daily ETL injection into Redshift.}
-        \resumeItem{Recommendations}
-          {Core service for all recommendation systems at Coursera, currently used on the homepage and throughout the content discovery process. Worked on both offline training and online serving.}
-        \resumeItem{Content Discovery}
-          {Improved content discovery by building a new onboarding experience on Coursera. Used this to personalize the search and browse experience. Also worked on ranking and indexing improvements.}
-        \resumeItem{Course Dashboards}
-          {Instructor dashboards and learner surveying tools, which helped instructors run their class better by providing data on Assignments and Learner Activity.}
+        \resumeItemPlain{Implementing generative AI solutions across the Financial Technology organization by designing APIs to give analysts faster access to financial data, reduce repetitive data requests, and reduce the workload of data engineers.}
+        \resumeItemPlain{Building a text-to-SQL chatbot used by financial analysts to examine trends in data for new mobility and broadband accounts. The chatbot features a Streamlit app that replaces legacy OLAP cubes.}
+        \resumeItemPlain{Deployed a locally hosted MCP server for data engineers to automate data requests, including tools for querying MSSQL databases and instructions for handling business logic in internal credit systems.}
       \resumeItemListEnd
 
-    \resumeSubheading
-      {Lucena Research}{Atlanta, GA}
-      {Data Scientist}{Summer 2012 and 2013}
+    \resumeSubSubheading
+      {Senior Data/AI Engineer, Finance}{Jul 2025 -- Jun 2026}
       \resumeItemListStart
-        \resumeItem{Portfolio Management}
-          {Created models for portfolio hedging, portfolio optimization and price forecasting. Also created a strategy backtesting engine used for simulating and backtesting strategies.}
-        \resumeItem{QuantDesk}
-          {Python backend for a web application used by hedge fund managers for portfolio management.}
+        \resumeItemPlain{Developed Databricks SQL and PySpark pipelines to ingest, transform, and analyze Credit and Collections data for new mobility accounts, identifying accounts at risk for fraud, disconnects, and suspensions.}
+        \resumeItemPlain{Refactored legacy batch processes and migrated scheduled jobs from a Windows VM to Databricks using PySpark, adding structured logging and error handling to cut downtime and eliminate single-host failure points.}
+        \resumeItemPlain{Established the team's first GitHub-based development workflow and CI/CD foundation, migrating a 30-member team from network drives and ad hoc releases while defining Git workflows and code review standards across the org.}
       \resumeItemListEnd
 
-    \resumeSubheading
-      {Georgia Institute of Technology}{Atlanta, GA}
-      {Research and Teaching Assistant}{Jan 2012 -- Dec 2013}
+    \resumeSubSubheading
+      {Data/AI Engineer II, Chief Data Office}{Jan 2024 -- Jun 2025}
       \resumeItemListStart
-        \resumeItem{Research Assistant -- Machine Learning}
-          {Research on machine learning for portfolio hedging and replication algorithms. Modeling low-risk \& continuous-return strategies. Developed the Python library QSTK.}
-        \resumeItem{Teaching Assistant -- Computational Investing}
-          {The online course on Coursera, had more than 100,000 students enrolled. It was featured on the 11 Alive News and the Atlanta Journal Constitution. Involved in creating assignments, exams and conducting recitation sessions. Also taught the on-campus version of the course.}
+        \resumeItemPlain{Delivered FastAPI services on Azure App Services to orchestrate multi-agent workflows across 10+ business domains, using LangChain and LangGraph for agent logic, tool calling, and decision handling.}
+        \resumeItemPlain{Hardened codebase security with Azure Key Vault and MSAL-backed secret loading. Created a CLI that handles OAuth2 device-code authentication so developers and agents could authenticate against internal APIs.}
+        \resumeItemPlain{Designed a LangGraph-based file summarization app adopted by Legal, Real Estate, and other domains.}
+      \resumeItemListEnd
+
+    \resumeSubSubheading
+      {Data/AI Engineer I, Field Operations}{Jul 2023 -- Dec 2023}
+      \resumeItemListStart
+        \resumeItemPlain{Oversaw the Operations Team’s migration from MySQL to Snowflake. Used Palantir Foundry and PySpark to construct pipelines for over 20 datasets, refined over 30 million rows of data, and set up automated refreshes.}
+        \resumeItemPlain{Designed a 20-page Power BI report covering project management and financial views. The report pulls and transforms data from Palantir, Jira, and SharePoint.}
       \resumeItemListEnd
 
   \resumeSubHeadingListEnd
 
 
 %-----------PROJECTS-----------------
+
+    % \resumeSubItem{QuantSoftware Toolkit}
+    %   {Open source Python library for financial data analysis and machine learning for finance.}
+    % \resumeSubItem{GitHub Visualization}
+    %   {Data visualization of Git log data using D3 to analyze project trends over time.}
+    % \resumeSubItem{Recommendation System}
+    %   {Music and movie recommender systems using collaborative filtering on public datasets.}
+    % \resumeSubItem{Mac Setup}
+    %   {Book that gives step-by-step instructions on setting up developer environment on macOS.}
+
 \section{Projects}
   \resumeSubHeadingListStart
-    \resumeSubItem{QuantSoftware Toolkit}
-      {Open source Python library for financial data analysis and machine learning for finance.}
-    \resumeSubItem{GitHub Visualization}
-      {Data visualization of Git log data using D3 to analyze project trends over time.}
-    \resumeSubItem{Recommendation System}
-      {Music and movie recommender systems using collaborative filtering on public datasets.}
-    \resumeSubItem{Mac Setup}
-      {Book that gives step-by-step instructions on setting up developer environment on macOS.}
+    \resumeSubheading
+      {Syllabus Helper}{}
+      {LangGraph, FastAPI, Streamlit, RAG}{January 2026}
+      \resumeItemListStart
+        \resumeItemPlain{Built a RAG-based chatbot enabling OMSCS students to query course syllabi, calculate grades, and auto-schedule key dates via the Google Calendar API, reducing manual academic planning effort.}
+        \resumeItemPlain{Ingested all OMSCS syllabi from Georgia Tech's official website into a LangChain in-memory vector store, enabling semantic search across required and elective course content.}
+        \resumeItemPlain{Built with LangGraph for multi-step reasoning, FastAPI for backend services, and Streamlit for the UI. Combined prompt chaining and retrieval-augmented generation to deliver accurate, context-aware responses grounded in syllabus content.}
+      \resumeItemListEnd
   \resumeSubHeadingListEnd
 
-%
+
 %--------SKILLS------------
-%\section{Skills}
-%  \resumeSubHeadingListStart
-%    \item{
-%      \textbf{Languages}{: Scala, Python, JavaScript, C++, SQL, Java}
-%      \hfill
-%      \textbf{Technologies}{: AWS, Play, React, Kafka, GCE}
-%    }
-%  \resumeSubHeadingListEnd
+\section{Skills}
+ \resumeSubHeadingListStart
+   \resumeSubItem{Programming Languages}{Python, SQL, R, Java, JavaScript, TypeScript, HTML, CSS}
+   \resumeSubItem{Libraries \& Frameworks}{PySpark, FastAPI, LangChain, LangGraph, Pydantic AI, FastMCP, Streamlit}
+   \resumeSubItem{Tools \& Platforms}{Git, Docker, Azure, Snowflake, Databricks, Power BI, Jira, Palantir Foundry}
+  \resumeSubItem{AI Tools}{Claude Code, Cursor, OpenCode, GitHub Copilot}
+ \resumeSubHeadingListEnd
 
 
 %-------------------------------------------

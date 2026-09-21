@@ -16,3 +16,11 @@ docker run --rm -i -v "$PWD":/data latex pdflatex nguyen_ethan_resume.tex
 ```sh
 pdflatex -interaction=nonstopmode -halt-on-error nguyen_ethan_resume.tex
 ```
+
+### Regenerate the PNG preview
+
+```sh
+rm -f preview/resume.png
+qlmanage -t -s 2400 -o preview nguyen_ethan_resume.pdf >/dev/null 2>&1
+mv preview/nguyen_ethan_resume.pdf.png preview/resume.png
+```
